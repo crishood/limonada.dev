@@ -2,5 +2,7 @@ $neutral-80: #5a8e61;
 $cream: #fbfdf2;
 $cream-green: #f4f4af;
 $cream-yellow: #e9f986;
-
+$lemon-green: #e9f986;
+$lemon-yellow: #f6f675;
 $radial-gradient: radial-gradient(circle, $cream-yellow 25%, $cream-green 100%);
+$lemon-gradient: linear-gradient(to right, $lemon-yellow, $lemon-green);

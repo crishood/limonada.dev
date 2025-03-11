@@ -1,0 +1,43 @@
+@use 'variables' as *;
+@use 'layout' as *;
+@use 'mixins' as *;
+
+.navbar {
+  @include flex-between;
+  align-items: center;
+  border: $border-solid;
+  border-radius: $border-radius;
+  a {
+    color: $neutral-80;
+    span {
+      font-family: NotoSerif;
+    }
+  }
+  &__left-col {
+    @include flex-center;
+    .brand {
+      @include flex-center;
+      width: 96px;
+      padding: 7px;
+      border-right: $border-solid;
+    }
+    .menu {
+      @include flex-center;
+      .menu__item {
+        @include flex-left;
+        min-width: 96px;
+        height: 46px;
+        border-right: $border-solid;
+        padding: 0 7px;
+      }
+      .menu__item:hover,
+      .menu__item.active {
+        background: $lemon-gradient;
+      }
+    }
+  }
+  &__right-col {
+    @include flex-center;
+    gap: 16px;
+  }
+}

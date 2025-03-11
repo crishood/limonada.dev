@@ -1,0 +1,42 @@
+<nav class="navbar">
+  <div class="navbar__left-col">
+    <div class="brand">
+      <img [src]="logo" alt="Limonada Dev logo" />
+    </div>
+    <div class="menu">
+      @for (item of menu.items; track item.path) {
+        <a
+          [routerLink]="item.path"
+          class="menu__item"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <span>
+            {{ item.label }}
+          </span>
+        </a>
+      }
+    </div>
+  </div>
+
+  <div class="navbar__right-col">
+    <div class="contact">
+      <a class="contact__email" href="mailto:{{ appConstants.CONTACT_EMAIL }}">
+        <span>
+          {{ appConstants.CONTACT_EMAIL }}
+        </span>
+      </a>
+      <div class="contact__social-media">
+        <a href="{{ appConstants.LINKEDIN_URL }}">
+          <img [src]="linkedin" alt="LinkedIn" />
+        </a>
+        <a href="{{ appConstants.GITHUB_URL }}">
+          <img [src]="github" alt="GitHub" />
+        </a>
+        <a href="{{ appConstants.SUBSTACK_URL }}">
+          <img [src]="substack" alt="Substack" />
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

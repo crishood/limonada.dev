@@ -1,2 +1,2 @@
-@use './base';
-@use './normalize';
+@forward './base';
+@forward './normalize';
