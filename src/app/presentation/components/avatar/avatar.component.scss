@@ -1,0 +1,23 @@
+@use 'variables' as *;
+@use 'layout' as *;
+@use 'mixins' as *;
+
+.avatar {
+  @include flex-column;
+  border: $border-solid;
+  border-radius: $border-radius;
+  width: 322px;
+
+  &__top-card {
+    height: 320px;
+    width: 320px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+  &__bottom-card {
+    @include flex-center;
+    height: 46px;
+  }
+}

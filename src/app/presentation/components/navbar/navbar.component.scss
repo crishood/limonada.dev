@@ -37,7 +37,24 @@
     }
   }
   &__right-col {
-    @include flex-center;
-    gap: 16px;
+    border-left: $border-solid;
+    .contact {
+      @include flex-center;
+
+      gap: 16px;
+      &__email {
+        @include flex-left;
+        padding: 0 7px;
+        width: 200px;
+        height: 46px;
+      }
+      &__social-media {
+        @include flex-center;
+        border-left: $border-solid;
+        padding: 7px 12px;
+        gap: 16px;
+        height: 46px;
+      }
+    }
   }
 }

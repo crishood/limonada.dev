@@ -1,7 +1,7 @@
 <nav class="navbar">
   <div class="navbar__left-col">
     <div class="brand">
-      <img [src]="logo" alt="Limonada Dev logo" />
+      <img width="32" height="32" [src]="logo" alt="Limonada Dev logo" />
     </div>
     <div class="menu">
       @for (item of menu.items; track item.path) {
@@ -21,19 +21,19 @@
 
   <div class="navbar__right-col">
     <div class="contact">
-      <a class="contact__email" href="mailto:{{ appConstants.CONTACT_EMAIL }}">
+      <div class="contact__email">
         <span>
           {{ appConstants.CONTACT_EMAIL }}
         </span>
-      </a>
+      </div>
       <div class="contact__social-media">
-        <a href="{{ appConstants.LINKEDIN_URL }}">
+        <a href="{{ appConstants.LINKEDIN_URL }}" target="_blank">
           <img [src]="linkedin" alt="LinkedIn" />
         </a>
-        <a href="{{ appConstants.GITHUB_URL }}">
+        <a href="{{ appConstants.GITHUB_URL }}" target="_blank">
           <img [src]="github" alt="GitHub" />
         </a>
-        <a href="{{ appConstants.SUBSTACK_URL }}">
+        <a href="{{ appConstants.SUBSTACK_URL }}" target="_blank">
           <img [src]="substack" alt="Substack" />
         </a>
       </div>
