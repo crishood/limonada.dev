@@ -6,7 +6,7 @@
     }
   } @else if $type-of == number {
     $unit: unit($mediaquery);
-    @if $unit == "px" {
+    @if $unit == 'px' {
       @media all and (min-width: $mediaquery) {
         @content;
       }
@@ -26,7 +26,7 @@
     }
   } @else if $type-of == number {
     $unit: unit($mediaquery);
-    @if $unit == "px" {
+    @if $unit == 'px' {
       @media all and (max-width: $mediaquery) {
         @content;
       }
@@ -41,4 +41,29 @@
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;
+}
+
+@mixin between($from, $to) {
+  $type-of-from: type-of($from);
+  $type-of-to: type-of($to);
+
+  $min-width: if(
+    map-has-key($breakpoints, $from),
+    map-get($breakpoints, $from),
+    if(unit($from) == 'px', $from, null)
+  );
+
+  $max-width: if(
+    map-has-key($breakpoints, $to),
+    map-get($breakpoints, $to),
+    if(unit($to) == 'px', $to, null)
+  );
+
+  @if $min-width and $max-width {
+    @media all and (min-width: #{$min-width}) and (max-width: #{$max-width}) {
+      @content;
+    }
+  } @else {
+    @error ('Invalid breakpoint values provided');
+  }
 }

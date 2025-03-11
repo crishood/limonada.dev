@@ -4,7 +4,11 @@ $font-sizes: (
   h3: 1.5rem,
   h4: 1rem,
   h5: 0.5rem,
-  p: 1rem,
+  regular: 1rem,
   small: 0.5rem,
   xsmall: 0.25rem,
 );
+
+@mixin font-size($key) {
+  font-size: map-get($font-sizes, $key);
+}
