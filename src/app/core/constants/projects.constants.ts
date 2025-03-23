@@ -62,34 +62,4 @@ This plugin is useful for users who want to migrate their PDF notes from differe
     tools: [TOOLS_CONSTANTS['Obsidian'], TOOLS_CONSTANTS['Typescript']],
     projectUrl: 'https://github.com/crishood/pdf-folder-to-markdowns',
   },
-  {
-    name: 'Trello Clone',
-    description:
-      'As part of the Make It Real bootcamp, I collaborated on the development of a Trello Clone, applying SCRUM methodology and Gitflow for efficient project management. I contributed to scripting interactive components with React to enhance functionality and user experience. On the backend, I implemented Node.js, Express, MongoDB, and Mongoose to ensure a scalable and well-structured system architecture.',
-    status: ProjectStatus.ARCHIVED,
-    startDate: '2025-03',
-    tools: [
-      TOOLS_CONSTANTS['Sass'],
-      TOOLS_CONSTANTS['Figma'],
-      TOOLS_CONSTANTS['HTML'],
-      TOOLS_CONSTANTS['CSS'],
-      TOOLS_CONSTANTS['JavaScript'],
-    ],
-    projectUrl: 'https://github.com/crishood/trello-clone-backend',
-  },
-  {
-    name: 'Dímelo',
-    description:
-      'As part of the Make It Real bootcamp, I developed a platform designed to connect beatmakers and songwriters in the same city to collaborate on music. The frontend was built using React, Redux Toolkit, and Mantine, ensuring a smooth and dynamic user experience. The backend, powered by Node.js, Express, and MongoDB, provided a solid foundation for user interactions and data management. The project was deployed using Netlify for the frontend and Heroku for the backend, ensuring accessibility and scalability.',
-    status: ProjectStatus.ARCHIVED,
-    startDate: '2025-03',
-    tools: [
-      TOOLS_CONSTANTS['Sass'],
-      TOOLS_CONSTANTS['Figma'],
-      TOOLS_CONSTANTS['HTML'],
-      TOOLS_CONSTANTS['CSS'],
-      TOOLS_CONSTANTS['JavaScript'],
-    ],
-    projectUrl: 'https://dimelo-ma-g.netlify.app/',
-  },
 ];
