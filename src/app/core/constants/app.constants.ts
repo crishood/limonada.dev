@@ -1,7 +1,15 @@
 export const APP_CONSTANTS = {
-  CONTACT_EMAIL: 'cris@limonada.dev',
-  GITHUB_URL: 'https://github.com/crishood',
-  LINKEDIN_URL: 'https://www.linkedin.com/in/crishood/',
-  TWITTER_URL: '',
-  SUBSTACK_URL: 'https://limonadanotes.substack.com/',
+  URL: {
+    CONTACT_EMAIL: 'cris@limonada.dev',
+    GITHUB_URL: 'https://github.com/crishood',
+    LINKEDIN_URL: 'https://www.linkedin.com/in/crishood/',
+    TWITTER_URL: '',
+    SUBSTACK_URL: 'https://limonadanotes.substack.com/',
+    YOUTUBE_URL: '',
+    SPOTIFY_URL: '',
+  },
+  GENERAL_COPIES: {
+    VISIT: 'Visit',
+    GO_TO_REPO: 'Go to repo',
+  },
 };

@@ -24,7 +24,7 @@ body {
 }
 
 body {
-  background: $radial-gradient;
+  background: $cream;
 }
 
 h1,
@@ -32,11 +32,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin: 0;
-  color: $neutral-80;
-  font-family: NotoSerif;
+  color: $neutral-100;
 }
 
 a {
@@ -52,35 +50,50 @@ a {
 }
 
 span {
-  font-family: NotoSerif;
+  font-family: NotoMono;
   color: $neutral-80;
 }
 
 p {
-  font-size: font-size(regular);
+  font-family: NotoSans;
+  font-size: font-size(body-md);
   line-height: 18px;
+  color: $neutral-80;
+  margin: 0;
 }
 
 h1 {
+  font-family: NotoSerifBold;
   font-size: font-size(h1);
   line-height: 53px;
 }
 h2 {
+  font-family: NotoSerifBold;
   font-size: font-size(h2);
   line-height: 36px;
 }
 h3 {
+  font-family: NotoSerif;
   font-size: font-size(h3);
   line-height: 22px;
+  font-weight: 400;
 }
 h4 {
-  font-family: var(--font-primary-regular);
+  font-family: NotoSerif;
   font-size: font-size(h4);
   line-height: 18px;
+  font-weight: 400;
 }
 h5 {
+  font-family: NotoSerif;
   font-size: font-size(h5);
+  line-height: 14px;
+  font-weight: 400;
 }
 h6 {
+  font-family: NotoSerif;
   font-size: font-size(h6);
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
 }

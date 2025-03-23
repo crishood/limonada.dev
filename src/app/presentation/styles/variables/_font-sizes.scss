@@ -1,14 +1,27 @@
+@use 'sass:map';
+
 $font-sizes: (
-  h1: 2.5rem,
+  h1: 4rem,
   h2: 2rem,
-  h3: 1.5rem,
+  h3: 1.25rem,
   h4: 1rem,
-  h5: 0.5rem,
+  h5: 0.875rem,
+  h6: 0.75rem,
+  body-lg: 1.125rem,
+  body-md: 1rem,
+  body-sm: 0.875rem,
+  body-xs: 0.75rem,
+  caption: 0.625rem,
+  button-md: 0.875rem,
+  button-lg: 1.5rem,
   regular: 1rem,
-  small: 0.5rem,
-  xsmall: 0.25rem,
 );
 
-@mixin font-size($key) {
-  font-size: map-get($font-sizes, $key);
+@function font-size($key) {
+  @if not map.has-key($font-sizes, $key) {
+    @warn "The key #{$key} is not in the font-sizes map.";
+    @return null;
+  }
+  $value: map.get($font-sizes, $key);
+  @return $value;
 }
