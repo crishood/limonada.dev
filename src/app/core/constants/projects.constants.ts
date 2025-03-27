@@ -6,7 +6,7 @@ export const PROJECTS_CONSTANTS: Project[] = [
     name: 'CrisHood.com',
     description:
       'CrisHood.com is my e-commerce platform designed for selling beats, built using WordPress to ensure a seamless shopping experience. Beyond development, I crafted the brand identity and wrote compelling copy to connect with my audience. The platform also serves as a space for music production, supporting new talents in their creative journey. Additionally, I manage cPanel for deployments and file administration, ensuring smooth performance and scalability.',
-    status: ProjectStatus.ACTIVE,
+    status: ProjectStatus.DEPLOYED,
     startDate: '2019-08',
     tools: [
       TOOLS_CONSTANTS['Wordpress'],

@@ -9,5 +9,6 @@ export enum ProjectStatus {
   IN_REVIEW = 'in-review',
   IN_DEVELOPMENT = 'in-development',
   ACTIVE = 'active',
+  DEPLOYED = 'deployed',
   ARCHIVED = 'archived',
 }
